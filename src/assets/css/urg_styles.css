@@ -1,0 +1,86 @@
+.grid {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.grid:before, .grid:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+[class*='col'] {
+    width: 100%;
+}
+
+@media (min-width: 991px) {
+    .col-50 {
+        width: 50%;
+    }
+
+    .col-30 {
+        width: 30%;
+
+    }
+
+    .col-60 {
+        width: 60%;
+
+    }
+
+    .col-70 {
+        width: 70%;
+
+    }
+
+    .col-100 {
+        width: 100%;
+
+    }
+}
+
+.urg-wrap {
+    padding: 0 10px;
+}
+
+.urg-form,
+.urg-form select {
+    width: 100%;
+}
+
+.urg-form select {
+
+}
+
+.ugr-wrap h2 {
+    background-color: rgba(104, 226, 206, 0.29);
+    line-height: 2;
+    padding: 0 10px;
+}
+
+.ugr-item {
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+.ugr-item + .ugr-item {
+    margin-top: 40px;
+}
+
+.ugr-item-warn {
+    border-left: 3px solid red;
+}
+
+.ugr-sc + .ugr-sc {
+    margin-top: 20px;
+}
